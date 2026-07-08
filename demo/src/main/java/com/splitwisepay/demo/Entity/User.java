@@ -64,6 +64,11 @@ public class User implements UserDetails {
         return email; // We use email as username
     }
 
+
+    public void setActive(Boolean active) {
+        isActive = active;
+    }
+
     @Override
     public boolean isAccountNonExpired()  { return true; }
 
